@@ -1,0 +1,231 @@
+﻿<header class="header bg-black navbar navbar-inverse" ng-include="'header.html'">
+</header>
+<section class="scrollable" id="pjax-container" ng-controller="QuotationCtrl">
+  <section class="vbox flex" ng-controller="QuotationEditCtrl">
+    <header class="header bg-white dker" ng-include="'Quotations/Common/quotations.header.html'">
+    </header>
+    <section >
+      <section>
+        <section >
+           <section  class="hbox stretch ">
+              <aside class="aside-lg bg-light lter b-r">
+                <section class="vbox">
+                  <section class="scrollable">
+                    <div class="wrapper">
+                      <div class="clearfix m-b">
+                        <a href="#" class="pull-left thumb m-r">
+                          <img src="assets/img/avatar.jpg" class="img-circle">
+                        </a>
+                        <div class="clear">
+                          <div class="h4 m-t-xs m-b-xs">BBQ Set #1</div>
+<!--                           <div><small class="text-muted"><i class="icon-map-marker"></i> Singapore, SG</small></div>
+ -->                          <div></div>
+                        </div>                
+                      </div>
+                      <!-- <div class="btn-group btn-group-justified m-b">
+                        <a class="btn btn-success btn-rounded" data-toggle="button">
+                          <span class="text">
+                            <i class="icon-envelope-alt"></i> Email
+                          </span>
+                          <span class="text-active">
+                            <i class="icon-eye-open"></i> Following
+                          </span>
+                        </a>
+                        <a class="btn btn-info btn-rounded">
+                          <i class="icon-comment-alt"></i> Chat
+                        </a>
+                      </div> -->
+                      <div>
+                      <small class="text-uc text-xs ">Company</small>
+                        <p><small class="text-muted">Riverbank Pte Ltd</small></p>
+                        <small class="text-uc text-xs text-muted">info</small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat.</p>
+                        <div class="line"></div>
+                        <!-- <small class="text-uc text-xs text-muted">connection</small> -->
+                        <!-- <p class="m-t-sm">
+                          <a href="#" class="btn btn-rounded btn-twitter btn-icon"><i class="icon-twitter"></i></a>
+                          <a href="#" class="btn btn-rounded btn-facebook btn-icon"><i class="icon-facebook"></i></a>
+                          <a href="#" class="btn btn-rounded btn-gplus btn-icon"><i class="icon-google-plus"></i></a>
+                        </p> -->
+                      </div>
+                    </div>
+                  </section>
+                </section>
+              </aside>
+              <aside class="bg-white">
+                <section class="vbox">
+                  <header class="header bg-light">
+                    <ul class="nav nav-tabs nav-white">
+                      <li class=""><a href="#"><i class="icon-plus"> New</i></a></li>
+                      <li class=""><a href="#"><i class="icon-search"> Find</i></a></li>
+                      <li class=""><a href="#" ><i class="icon-print">Print</i></a></li>
+                      <li class=""><a href="#" ><i class="icon-list">List all</i></a></li>
+                      <li class=""><a href="#" ><i class="icon-trash">Delete</i></a></li>
+                    </ul>
+                  </header>
+                  <section class="scrollable wrapper">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <section class="panel">
+                        <pre>{{quotation}}</pre>
+                          <header class="panel-heading font-bold">Quotation Details</header>
+                          <div class="panel-body">
+                            <form role="form">
+                              <div class="form-group ">
+                                <label >Expected Date</label>
+                                <div>
+                                  <input type="email" class="form-control" placeholder="Name" ng-model="quotation.dateExpected">
+                                </div>
+                              </div>
+                              <div class="form-group m-b">
+                                <label >Remarks</label>
+                                <div >
+                                  <input type="text" class="form-control" placeholder="Title" ng-model="quotation.remarks">
+                                </div>
+                              </div>
+                               <div class="form-group">
+                                  <label>Tags</label>
+                                  <input ui-select2="select2Quotations" type="text" ng-model="quotation.tags" ng-change="tagsChanged()" placeholder="Insert tags" class="ui-select2" />
+                              </div>
+                              <div class="form-group">
+                                <label >Footer Description</label>
+                                <div>
+                                  <input type="text" class="form-control" placeholder="Tel.no" ng-model="quotation.footerDescription">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <section class="panel">
+                              <header class="panel-heading font-bold">Billing Address</header>
+                              <div class="panel-body">
+                                <form role="form">
+                                   <div class="form-group">
+                                    <label>Unit No #</label>
+                                    <input type="text" class="form-control" placeholder="Unit no">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Building name</label>
+                                    <input type="text" class="form-control" placeholder="Building name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Postal code</label>
+                                    <input type="text" class="form-control" placeholder="Postal code">
+                                  </div>
+                                </form>
+                              </div>
+                            </section>
+                          </div>
+                          <div class="col-sm-6">
+                            <section class="panel">
+                              <header class="panel-heading font-bold">Shipping Address</header>
+                              <div class="panel-body">
+                                <form role="form">
+                                   <div class="form-group">
+                                    <label>Unit No #</label>
+                                    <input type="text" class="form-control" placeholder="Unit no">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Building name</label>
+                                    <input type="text" class="form-control" placeholder="Building name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Postal code</label>
+                                    <input type="text" class="form-control" placeholder="Postal code">
+                                  </div>
+                                </form>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <section class="panel">
+                              <header class="panel-heading font-bold">Pricing</header>
+                              <div class="panel-body">
+                                <form role="form">
+                                  <div class="form-group">
+                                    <label>Currency</label>
+                                      <currencies-dropdown name="currency" data-required="true" ng-model="quotation.currencyId" class="form-control"></currencies-dropdown>
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Credit Term</label>
+                                    <creditterms-dropdown name="creditTerm" ng-model="quotation.creditTermId" class="form-control"></creditterms-dropdown>
+                                  </div>
+                                </form>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <section class="panel">
+                      <header class="panel-heading font-bold">
+                          <span class="h4">Items</span>
+                      </header>
+                      <div class="panel-body">
+                          <form method="post" ng-submit="addPurchaseItem(newPurchaseItem)">
+                              <table class="table table-condensed b-t text-sm m-b-none" purchaseitems-table>
+                                  <thead>
+                                      <tr>
+                                          <th>#</th>
+                                          <th>Product Name</th>
+                                          <th>Description</th>
+                                          <th>Categories</th>
+                                          <th>Unit Price</th>
+                                          <th>Quantity</th>
+                                          <th>Total</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr class="warning">
+                                          <td class="col-xs-1">#</td>
+                                          <td class="col-xs-3">
+                                              <input class="form-control input-sm" ui-select2="select2OptionsQuotation" ng-model="newQuotationItem.productName" /></td>
+                                          <td class="col-xs-2">
+                                              <input class="form-control input-sm" ng-model="newQuotationItem.description" /></td>
+                                          <td class="col-xs-1">
+                                              <select class="form-control input-sm" ng-model="newQuotationItem.uom"></select></td>
+                                          <td class="col-xs-1">
+                                              <input class="form-control input-sm" ng-model="newQuotationItem.unitPrice" type="number" /></td>
+                                          <td class="col-xs-1">
+                                              <input class="form-control input-sm" ng-model="newQuotationItem.quantity" type="number" /></td>
+                                          <td class="col-xs-1">{{newQuotationItem.unitPrice * newQuotationItem.quantity | currency}}<input type="submit" value="" class="hide" /></td>
+                                      </tr>
+                                      <tr ng-repeat="item in quotation.quotationDetailsList">
+                                          <td class="col-xs-1">{{index}}</td>
+                                          <td class="col-xs-3">
+                                              <input class="form-control input-sm" ng-model="item.productName" /></td>
+                                          <td class="col-xs-2">
+                                              <input class="form-control input-sm" ng-model="item.description" /></td>
+                                          <td class="col-xs-1">
+                                              <select class="form-control input-sm" ng-model="item.uom"></select></td>
+                                          <td class="col-xs-1">
+                                              <input class="form-control input-sm" ng-model="item.unitPrice" type="number" /></td>
+                                          <td class="col-xs-1">
+                                              <input class="form-control input-sm" ng-model="item.quantity" type="number" /></td>
+                                          <td class="col-xs-1">{{item.unitPrice * item.quantity | currency}} <button type="button" class="close" aria-hidden="true" ng-click="removeQuotationItem($index)">&times;</button></td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </form>
+                          <table class="table table-striped b-t text-sm" quotationitems-table>
+                              <tbody>
+                              </tbody>
+                          </table>
+                      </div>
+                    </section>
+                  </section>
+                </section>
+              </aside>
+            </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>

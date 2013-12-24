@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="RoyalCateringApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Royal Catering</title>
+    <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/font.css" type="text/css" cache="false" />
+    <link rel="stylesheet" href="assets/js/datatables/datatables.css" type="text/css" />
+    <link href="assets/js/slickgrid/slick.grid.css" rel="stylesheet" />
+    <link href="assets/js/slickgrid/slick-default-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/js/select2/select2.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/plugin.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="assets/js/datepicker/datepicker.css" type="text/css" />
+    <link rel="stylesheet" href="assets/js/fuelux/fuelux.css" type="text/css" />
+    <link rel="stylesheet" href="assets/js/fullcalendar/fullcalendar.css" type="text/css" />
+    <style>
+        pre {
+            height:1px;
+            overflow:hidden;
+        }
+        pre:hover {
+            height:auto;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/ie/respond.min.js" cache="false"></script>
+      <script src="assets/js/ie/html5.js" cache="false"></script>
+      <script src="assets/js/ie/fix.js" cache="false"></script>
+    <![endif]-->
+
+</head>
+
+<body class="ng-cloak">
+    <section class="hbox stretch">
+        <aside ng-include="'inc.sidebar.main.html'" class="bg-dark lter aside-lg nav-vertical" id="nav"></aside>
+        <!-- .vbox -->
+        <section id="content">
+            <section class="vbox" ng-view></section>
+        </section>
+        <!-- /.vbox -->
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="assets/lib/angular/angular-file-upload-shim.min.js"></script> 
+    <script src="assets/lib/angular/angular.js"></script>
+    <script src="assets/lib/angular/angular-file-upload.min.js"></script>  
+    <script src="assets/lib/angular/angular-route.js"></script>
+    <script src="assets/lib/angular/angular-resource.js"></script>
+    <script src="assets/lib/angular/angular-animate.js"></script>
+    <script src="assets/lib/app.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- parsley -->
+    <script src="assets/js/parsley/parsley.min.js" cache="false"></script>
+    <script src="assets/js/parsley/parsley.extend.js" cache="false"></script>
+    <!-- App -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.data.js"></script>
+    <script src="assets/js/app.plugin.js"></script>
+    <script src="assets/js/libs/underscore-min.js"></script>
+    <script src="assets/js/libs/jquery.pjax.js"></script>
+    <!-- select2 -->
+    <script src="assets/js/select2/select2.min.js" cache="false"></script>
+    <script src="assets/js/select2/select2.angular.js" cache="false"></script>
+
+    <!-- Slickgrid -->
+    <script src="assets/js/slickgrid/lib/jquery.event.drag-2.2.js"></script>
+    <script src="assets/js/slickgrid/slick.core.js"></script>
+    <script src="assets/js/slickgrid/slick.grid.js"></script>
+    <!-- datatables -->
+    <script src="assets/js/datatables/jquery.dataTables.min.js"></script>
+
+    <!-- Modules -->
+    <script src="Calendar/calendar.js"></script>
+    <script src="Ingredients/ingredients.js"></script>
+    <script src="Dishes/dishes.js"></script>
+    <script src="Packages/packages.js"></script>
+    <script src="Quotations/quotations.js"></script>
+    <script src="SalesOrders/salesOrders.js"></script>
+    <script src="DeliveryOrders/deliveryOrders.js"></script>
+    <script src="GNM/CreditTerms/creditTerm.js"></script>
+    <script src="GNM/Currencies/currency.js"></script>
+    
+
+    <!-- fuelux -->
+    <script src="assets/js/fuelux/fuelux.js"></script>
+
+    <!-- datepicker -->
+    <script src="assets/js/datepicker/bootstrap-datepicker.js"></script>
+
+    <!-- Morris -->
+    <script src="assets/js/charts/morris/raphael-min.js" cache="false"></script>
+    <script src="assets/js/charts/morris/morris.min.js" cache="false"></script>
+    <script src="assets/js/fullcalendar/fullcalendar.min.js" cache="false"></script>
+</body>
+</html>

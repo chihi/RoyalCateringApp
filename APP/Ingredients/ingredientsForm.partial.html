@@ -1,0 +1,263 @@
+﻿<header class="header bg-black navbar navbar-inverse" ng-include="'header.html'">
+</header>
+<section class="scrollable" id="pjax-container" ng-controller="IngredientCtrl">
+  <section class="vbox flex">
+    <header class="header bg-white dker" ng-include="'Ingredients/Common/ingredients.header.html'">
+    </header>
+    <section>
+      <section >
+        <section ng-controller="IngredientEditCtrl">
+           <section class="hbox stretch ">
+              <aside class="aside-lg bg-light lter b-r">
+                <section class="vbox">
+                  <section class="scrollable">
+                    <div class="wrapper">
+                      <div class="clearfix m-b">
+                        <a href="#" class="pull-left thumb m-r">
+                          <img src="assets/img/avatar.jpg" class="img-circle">
+                        </a>
+                        <div class="clear">
+                          <div class="h4 m-t-xs m-b-xs">{{ingredient.name}}</div>
+                          <div><small class="text-muted">{{ingredient.description}}</small></div>
+                          <div></div>
+                        </div>                
+                      </div>
+                      <!-- <div class="btn-group btn-group-justified m-b">
+                        <a class="btn btn-success btn-rounded" data-toggle="button">
+                          <span class="text">
+                            <i class="icon-envelope-alt"></i> Email
+                          </span>
+                          <span class="text-active">
+                            <i class="icon-eye-open"></i> Following
+                          </span>
+                        </a>
+                        <a class="btn btn-info btn-rounded">
+                          <i class="icon-comment-alt"></i> Chat
+                        </a>
+                      </div> -->
+                      <div>
+                      <small class="text-uc text-xs ">Company</small>
+                        <p><small class="text-muted">Riverbank Pte Ltd</small></p>
+                        <small class="text-uc text-xs text-muted">info</small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat.</p>
+                        <div class="line"></div>
+                        <!-- <small class="text-uc text-xs text-muted">connection</small> -->
+                        <!-- <p class="m-t-sm">
+                          <a href="#" class="btn btn-rounded btn-twitter btn-icon"><i class="icon-twitter"></i></a>
+                          <a href="#" class="btn btn-rounded btn-facebook btn-icon"><i class="icon-facebook"></i></a>
+                          <a href="#" class="btn btn-rounded btn-gplus btn-icon"><i class="icon-google-plus"></i></a>
+                        </p> -->
+                      </div>
+                    </div>
+                  </section>
+                </section>
+              </aside>
+              <aside class="bg-white">
+                <section class="vbox">
+                  <header class="header bg-light">
+                    <ul class="nav nav-tabs nav-white">
+                      <li class=""><a href="#"><i class="icon-plus"> New</i></a></li>
+                      <li class=""><a href="#"><i class="icon-search"> Find</i></a></li>
+                      <li class=""><a href="#" ><i class="icon-print">Print</i></a></li>
+                      <li class=""><a href="#" ><i class="icon-list">List all</i></a></li>
+                      <li class=""><a href="#" ><i class="icon-trash">Delete</i></a></li>
+                    </ul>
+                  </header>
+                  <section class="scrollable wrapper">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <section class="panel">
+                          <header class="panel-heading font-bold">Customer Details</header>
+                          <div class="panel-body">
+                            <form role="form">
+                              <div class="form-group ">
+                                <label class="col-sm-3">Name</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="email" class="form-control" placeholder="Name">
+                                </div>
+                              </div>
+                              <div class="form-group m-b">
+                                <label class="col-sm-3">Title</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Title">
+                                </div>
+                              </div>
+                               <div class="form-group">
+                                <label class="col-sm-3">Company</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Company">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Tel. No</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Tel.no">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Mobile No.</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Mobile no.">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Market Segment</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Market Segment">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Credit Term</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Credit Term">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Credit Limit</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Credit Limit">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Sales Rep</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Sales Representative">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Payment mode</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Payment mode">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Date Created</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Date Created">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Date Modified</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Date Modified">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-3">Balance Due</label>
+                                <div class="col-sm-9 m-b">
+                                  <input type="text" class="form-control" placeholder="Balance Due">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <section class="panel">
+                              <header class="panel-heading font-bold">Billing Address</header>
+                              <div class="panel-body">
+                                <form role="form">
+                                  <div class="form-group">
+                                    <label>Blk/Home no.</label>
+                                    <input type="text" class="form-control" placeholder="Blk/Home no">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Street name</label>
+                                    <input type="text" class="form-control" placeholder="Street name">
+                                  </div>
+                                   <div class="form-group">
+                                    <label>Unit No #</label>
+                                    <input type="text" class="form-control" placeholder="Unit no">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Building name</label>
+                                    <input type="text" class="form-control" placeholder="Building name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Postal code</label>
+                                    <input type="text" class="form-control" placeholder="Postal code">
+                                  </div>
+                                </form>
+                              </div>
+                            </section>
+                          </div>
+                         <!--  <div class="col-sm-6">
+                            <section class="panel">
+                              <header class="panel-heading font-bold">Supplier Product List</header>
+                              <table class="table table-striped m-b-none text-sm">
+                                <thead>
+                                  <tr>
+                                    <th width="15">Prod#</th>
+                                    <th>Items</th>                    
+                                    <th>Packing</th>
+                                    <th>Cost</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>                    
+                                    <td>
+                                      2423
+                                    </td>
+                                    <td>Slice cheese</td>
+                                    <td>
+                                      10pkt x 50pcs
+                                    </td>
+                                    <td>
+                                      $10.00
+                                    </td>
+                                  </tr>
+                                  <tr>                    
+                                    <td>
+                                      2423
+                                    </td>
+                                    <td>Slice cheese</td>
+                                    <td>
+                                      10pkt x 50pcs
+                                    </td>
+                                    <td>
+                                      $10.00
+                                    </td>
+                                  </tr>
+                                  <tr>                    
+                                     <td>
+                                      2423
+                                    </td>
+                                    <td>Slice cheese</td>
+                                    <td>
+                                      10pkt x 50pcs
+                                    </td>
+                                    <td>
+                                      $10.00
+                                    </td>
+                                  </tr>
+                                  <tr>                    
+                                     <td>
+                                      2423
+                                    </td>
+                                    <td>Slice cheese</td>
+                                    <td>
+                                      10pkt x 50pcs
+                                    </td>
+                                    <td>
+                                      $10.00
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </section>
+                          </div> -->
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </section>
+                </section>
+              </aside>
+            </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>
